@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    stream:
+      function:
+        definition: paymentEventProcessor
+      bindings:
+        paymentEventProcessor-in-0:
+          destination: payment-event
+        paymentEventProcessor-out-0:
+          destination: user-event
